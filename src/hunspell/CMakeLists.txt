@@ -12,7 +12,7 @@ ADD_LIBRARY(hunspell STATIC
   suggestmgr.cxx
 )
 
-
+target_compile_definitions(hunspell PRIVATE HUNSPELL_STATIC=1)
 
 INCLUDE_DIRECTORIES("${CMAKE_INSTALL_PREFIX}/include")
 
